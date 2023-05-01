@@ -8,7 +8,7 @@ body {
 }
 
 .welcome-header {
-  margin-top: 150px 0px;
+  margin: 90px 0px;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -32,12 +32,16 @@ body {
 }
 
 #login-form input {
-  border: none;
   padding: 15px 0px;
   font-size: 18px;
-  boarder-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  margin-bottom: 25px;
+  transition: border-color 0.3s ease-in-out;
 }
 
 #login-form input::placeholder {
   color: rgba(0, 0, 0, 0.4);
+}
+
+#login-form input:focus {
+  border-color: var(--yellow);
 }
