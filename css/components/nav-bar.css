@@ -12,9 +12,22 @@
   justify-content: space-between;
 }
 .nav__link {
+  position: relative;
   color: #2f363e;
 }
-.status-bar__column {
-  position: fixed;
-  width: 100%;
+
+.nav__notification {
+  position: absolute;
+  left: 15px;
+  bottom: 15px;
+}
+
+.nav__notification__ellipse {
+  background-color: tomato;
+  width: 6px;
+  height: 6px;
+  border-radius: 3px;
+  position: absolute;
+  left: 35px;
+  bottom: 30px;
 }

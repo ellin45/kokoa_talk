@@ -6,6 +6,7 @@
 .status-bar__column {
   width: 33%;
 }
+
 .status-bar__column:first-child span {
   margin-right: 5px;
 }
@@ -21,4 +22,8 @@
 
 .status-bar__column .fa-battery-full {
   margin: 0px 5px;
+}
+.status-bar__column {
+  position: fixed;
+  width: 100%;
 }
