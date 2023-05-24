@@ -46,10 +46,13 @@
   font-size: 14px;
   border-radius: 25px;
   margin-bottom: 25px;
+  transition: transform 1s ease-in;
+  transform: rotateX(360deg);
 }
-@keyframes message__bubble {
+
+@keyframes message-row__content {
   from {
-    transform: translateX(-30px);
+    transform: translateX(150px);
   }
   to {
     transform: none;
@@ -74,6 +77,10 @@
   display: block;
 }
 
+.message-row:hover img {
+  opacity: 0.5;
+}
+
 .message__info {
   display: flex;
   align-items: flex-end;
@@ -87,6 +94,7 @@
   border-top-left-radius: 0px;
   margin-right: 5px;
 }
+
 @keyframes message-row--own .message__bubble {
   from {
     opacity: 0;
